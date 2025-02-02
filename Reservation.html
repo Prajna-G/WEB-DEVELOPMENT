@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reservation</title>
+  </head>
+<style>
+
+    .transparent-button {
+      background-color: transparent;
+      height: 30px;
+      width: 30%;
+      border-color:rgb(150, 162, 200);
+      color: white;
+      font-size: 16px;
+
+    }
+
+    .transparent-textfield {
+      width: 50%;
+      height: 30px;
+      
+      border-color:rgb(150, 162, 200);
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+     
+    } 
+h1{
+font-weight: bold;
+font-family:Californian FB;
+color:lavender; 
+}
+ aside{
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      width: 35%;
+      font-size: 30px;
+      padding: 10px;
+   padding-left: 15px;
+  margin-left: 15px;
+color:lavender; 
+background-color: rgba(0, 0, 0.1, 0.5);
+  float:left ;
+ font-family:Californian FB;
+ }
+ </style>
+<style>
+body {
+  background-image: URL("https://www.food-service.de/news/media/1/Franziska-9410.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center up;
+}
+.transparent-background {
+  background-color: transparent;
+}
+</style>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu {
+      background-color: rgba(0, 0, 0.1, 0.5);
+      position: relative;
+      top: 10px;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family:Californian FB;
+    }
+
+    .menu li {
+      float: right;
+    }
+
+    .menu li a {
+      display: block;
+      color: lavender;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family:Californian FB;
+      font-size:20px;
+    }
+
+    .menu li a:hover {
+      background-color: rgba(0, 0, 0.1, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+  
+    <ul>
+      <li><a href="V:\ALL PROJECTS\4th SEM\Web Technology\Web technology Lab\Restaurantly\Restaurantly\Sign_Up.html">Sign Up</a></li>
+      <li><a href="V:\ALL PROJECTS\4th SEM\Web Technology\Web technology Lab\Restaurantly\Restaurantly\Login.html">Login</a></li>
+      <li><a href="V:\ALL PROJECTS\4th SEM\Web Technology\Web technology Lab\Restaurantly\Restaurantly\whatweoff.html">Our Gallery</a></li>
+    </ul>
+
+  </div>
+<aside>
+<h1>Craving something ?</h1>
+<p>Let's get you started !</p><form action="https://goo.gl/maps/nYVHfzfsh5qbir3u7">
+ 
+<input type="text" value="Let us know the location." class="transparent-textfield"  readonly>
+<input type="submit" value="Search" class="transparent-button" class="circular-button">
+</form>
+</aside>
+<script>
+  function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+  if (username === "" || password === "") {
+    alert("Please fill in all fields");
+    return false; // Prevent form submission
+  }
+  
+  return true; // Allow form submission
+}
+
+</script>  
+  </body>
+</html>

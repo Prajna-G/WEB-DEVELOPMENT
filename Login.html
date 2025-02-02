@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+body {
+  background-image: URL("https://media.istockphoto.com/id/683480284/photo/wood-table-with-blur-light-in-night-cafe-restaurant-background.jpg?s=170667a&w=0&k=20&c=fv8-l1RdXP6ibFhZv0NsDrinjUZhI_4Zcc7F3qjydo0=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center centre;
+  color:white;
+}
+aside{
+      border-radius:10%;
+      position: absolute;
+      top: 80px;
+      left:400px;
+      width: 35%;
+      height:78%;
+      font-size: 20px;
+      padding: 10px;
+   padding-left: 15px;
+  margin-left: 15px;
+color:lavender; 
+background-color: rgba(0, 0, 0.1, 0.5);
+  float:left ;
+ font-family: Times New Roman;
+ }
+    .transparent-button {
+      background-color:rgb(150, 162, 200,0.1) ;
+      height: 40px;
+      width: 40%;
+      border-color:rgb(160, 160, 160,1);
+      color: white;
+	border-radius: 10%;
+      font-size: 16px;
+      
+    }
+
+    .transparent-textfield {
+      width: 400px;
+      height: 30px;
+      border-color:transparent;
+      background-color: transparent;
+      color: white;
+           
+    } 
+    </style>
+<body >
+    
+    <aside>
+    
+      <form action="V:\ALL PROJECTS\4th SEM\Web Technology\Web technology Lab\Restaurantly\Restaurantly\index.html" method="post" alighn:"centre" onsubmit="return validateForm()">
+        <center><h1>Login</h1></center>
+        UserName: <br><br>
+        <input type="text" id="username" name="uname" size"100px" class="transparent-textfield">
+        <br><br> 
+        Password: <br><br>
+        <input type="text" id="password" name="cpwd"  size="100px" class="transparent-textfield">
+        <br><br>
+        <input type="submit" value="Login"class="transparent-button">
+        <input type="reset" value="Reset"class="transparent-button">
+        </form>
+           
+</aside>
+<script>
+ function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+  if (username === "" || password === "") {
+    alert("Please fill in all fields");
+    return false; // Prevent form submission
+  }
+  
+  return true;
+  if (username === "" && password === "") {
+    alert("Please fill in all fields");
+    return false; // Prevent form submission
+  }
+  
+  return true; // Allow form submission
+}
+
+</script>
+</body>
+</html>
