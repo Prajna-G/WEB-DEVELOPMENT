@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<body>
+<div>
+<dialog id="myFirstDialog" style="width:50%; background-color:lavender;border:1px dotted black;">
+<p><q>You are born to be real,not perfect
+</q>-<cite>Bts SUGA</cite></p> 
+<button id="hide">close</button>
+</dialog>
+<button id="show">Show Dialog</button>
+</div>
+<!-- JavaScript to provide the "Show/Close" functionality --> 
+<script type="text/Javascript">
+(function(){
+     var dialog=document.getElementById('myFirstDialog');
+     document.getElementById('show').onclick=function(){
+     dialog.show();
+     };
+     document.getElementById('hide').onclick=function(){
+     dialog.close();
+     };
+     })();
+     </script>
+     </body>
+     </html>

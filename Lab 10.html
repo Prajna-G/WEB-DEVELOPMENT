@@ -1,0 +1,15 @@
+<html>
+<body>
+<canvas id="canvas2" width="200" height="200" style="border:1px solid black">
+<canvas/>
+<script type="text/javascript">
+var c=document.getElementById("canvas2");
+var cx=c.getContext("2d");
+var grd=cx.createLinearGradient(0,0,0,200);
+grd.addColorStop(0.3,"pink");
+grd.addColorStop(0.7,"blue");
+cx.fillStyle=grd;
+cx.fillRect(0,0,200,200);
+</script>
+</body>
+</html>

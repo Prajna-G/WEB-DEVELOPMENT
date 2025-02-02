@@ -1,0 +1,42 @@
+<form action=" Registration.html" method="post" alighn:"centre" onsubmit="return validateForm()">
+        <center><h1>Login</h1></center>
+        Name: <br><br>
+        <input type="text" id="n"  >
+        <br><br> 
+        Age: <br><br>
+        <input type="text" id="a" >
+        <br><br> 
+        Password: <br><br>
+        <input type="text" id="p" >
+        <br><br>
+        Confirm Password: <br><br>
+        <input type="text" id="c" >
+        <br><br>
+        <input type="submit">
+        <input type="reset" >
+        </form>
+           
+</aside>
+<script>
+ function validateForm() {
+  var n = document.getElementById("n").value;
+  var a = document.getElementById("a").value;
+  var p = document.getElementById("p").value;
+  var c = document.getElementById("c").value;
+  
+  if (n==null || n==""){  
+  alert("Name can't be blank");  
+  return false; 
+ }else if (a==null || a==""){  
+  alert("Age can't be blank");  
+  return false;
+ }else if(p.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false; 
+ }else if(c != p){  
+  alert("Password mismatch.");  
+  return false;
+ }  
+}
+
+</script>
