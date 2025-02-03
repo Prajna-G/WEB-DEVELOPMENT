@@ -1,3 +1,3 @@
 # WEB-DEVELOPMENT
-Program Outputs - PROG-OP[Folder], 
-Project Output - 
+Program Outputs - PROG-OP.pdf 
+Project Output - WEB TECHNOLOGY REPORT.pdf
